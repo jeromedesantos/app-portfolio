@@ -1,0 +1,45 @@
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import type { ReactNode } from "react";
+import { ThemeProvider } from "next-themes";
+import "./globals.css";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
+  title: "jeremy.dev",
+  description:
+    "Tingkatkan efisiensi bisnismu dengan automasi stok, notifikasi, dan laporan real-time — langsung dari Telegram.",
+  icons: {
+    icon: [
+      { media: "(prefers-color-scheme: light)", url: "/icon-light.png" },
+      { media: "(prefers-color-scheme: dark)", url: "/icon-dark.png" },
+    ],
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: ReactNode;
+}>) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={`font-sans ${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {children}
+        </ThemeProvider>
+      </body>
+    </html>
+  );
+}
