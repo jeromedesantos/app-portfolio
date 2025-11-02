@@ -3,7 +3,10 @@
 @import "swiper/css";
 @import "swiper/css/navigation";
 @import "swiper/css/pagination";
-@import "swiper/css/autoplay";
+
+.mySwiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
 
 @custom-variant dark (&:is(.dark *));
 
