@@ -6,7 +6,7 @@ export function Stack() {
   return (
     <section
       id={stack.id}
-      className="relative flex flex-col min-h-2/3 justify-center items-center gap-12 py-20 px-6 overflow-hidden bg-accent scroll-mt-40"
+      className="relative flex flex-col min-h-1/2 py-20 justify-center items-center gap-12 px-6 overflow-hidden bg-accent scroll-mt-40"
     >
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute -top-16 -right-20 h-64 w-64 rounded-full bg-primary/10 blur-3xl" />
