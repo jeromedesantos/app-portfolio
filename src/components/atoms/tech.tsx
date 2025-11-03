@@ -1,5 +1,5 @@
 import { LogoLoop } from "@/components/ui/logo-loop";
-import { DynamicSiIcon } from "./icon";
+import { DynamicSiIcon } from "./icon-si";
 import stacks from "@/data/stacks.json";
 
 const techMapped = stacks.map((stack) => ({

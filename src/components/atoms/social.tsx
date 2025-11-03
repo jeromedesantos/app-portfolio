@@ -1,36 +1,19 @@
-import {
-  Instagram,
-  Linkedin,
-  Youtube,
-  Github,
-  LucideProps,
-} from "lucide-react";
-import { ComponentType } from "react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Link from "next/link";
-
-const iconMap: { [key: string]: ComponentType<LucideProps> } = {
-  Instagram,
-  Linkedin,
-  Youtube,
-  Github,
-};
+import { DynamicIcon } from "./icon";
+import dynamicIconImports from "lucide-react/dynamicIconImports";
+import { Suspense } from "react";
 
 export function Social({
-  icon,
+  name,
   delay,
   href,
 }: {
-  icon: string;
+  name: string;
   delay: number;
   href: string;
 }) {
-  const IconComponent = iconMap[icon];
-  if (!IconComponent) {
-    return null;
-  }
-
   return (
     <motion.div
       initial={{ opacity: 0, translateY: "100%" }}
@@ -39,8 +22,16 @@ export function Social({
       viewport={{ once: true, amount: 0.4 }}
     >
       <Link href={href} target="_blank">
-        <Button variant="secondary" className="rounded-full cursor-pointer p-5">
-          <IconComponent />
+        <Button
+          variant="secondary"
+          className="rounded-full cursor-pointer p-5 transition-transform hover:scale-115"
+        >
+          <Suspense>
+            <DynamicIcon
+              name={name as keyof typeof dynamicIconImports}
+              className="w-5 h-5"
+            />
+          </Suspense>
         </Button>
       </Link>
     </motion.div>

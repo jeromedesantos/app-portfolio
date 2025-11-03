@@ -1,29 +1,19 @@
-"use client";
-import { FC, SVGProps, useMemo } from "react";
 import dynamic from "next/dynamic";
+import { LucideProps } from "lucide-react";
+import dynamicIconImports from "lucide-react/dynamicIconImports";
 
-interface DynamicSiIconProps extends SVGProps<SVGSVGElement> {
-  name: string;
+interface IconProps extends LucideProps {
+  name: keyof typeof dynamicIconImports;
 }
 
-export const DynamicSiIcon: FC<DynamicSiIconProps> = ({
-  name,
-  ...props
-}) => {
-  const Icon = useMemo(() => {
-    return dynamic(() => import("react-icons/si").then((mod) => {
-      const icon = mod[name as keyof typeof mod];
-      if (!icon) {
-        console.warn(
-          `Icon with name "${name}" not found in react-icons/si.`
-        );
-        return () => null;
-      }
-      return icon;
-    }), {
-      loading: () => <div style={{ width: 48, height: 48 }} />,
-    });
-  }, [name]);
+export const DynamicIcon = ({ name, ...props }: IconProps) => {
+  if (!dynamicIconImports[name]) {
+    console.warn(
+      `Icon with name "${name}" not found in lucide-react/dynamicIconImports.`
+    );
+    return null; // Or render a fallback icon
+  }
+  const LucideIcon = dynamic(dynamicIconImports[name]);
 
-  return <Icon {...props} />;
+  return <LucideIcon {...props} />;
 };

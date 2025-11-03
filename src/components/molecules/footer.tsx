@@ -1,17 +1,20 @@
 import { motion } from "framer-motion";
 import { Social } from "@/components/atoms/social";
-import footers from "@/data/footers.json";
+import socials from "@/data/socials.json";
+import footers from "@/data/footer.json";
 import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer
-      id={footers.id}
-      className="bg-gradient-to-b from-background to-accent pt-16 pb-12"
-    >
+    <footer id={footers.id} className="pt-16 pb-12">
       <div className="flex flex-wrap justify-center gap-2 mb-5">
-        {footers.socials.map((social) => (
-          <Social key={social.id} {...social} />
+        {socials.map((social) => (
+          <Social
+            key={social.id}
+            delay={Number(social.id) * 0.1}
+            name={social.name}
+            href={social.href}
+          />
         ))}
       </div>
       <motion.p

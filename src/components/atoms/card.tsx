@@ -46,14 +46,17 @@ export function Card({
         <div className="flex gap-3 mt-auto">
           {githubLink && (
             <Link href={githubLink} target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" className="flex items-center gap-2">
+              <Button
+                variant="outline"
+                className="flex items-center gap-2 cursor-pointer transition-transform hover:scale-105 hover:brightness-110"
+              >
                 <Github className="w-4 h-4" /> GitHub
               </Button>
             </Link>
           )}
           {websiteLink && (
             <Link href={websiteLink} target="_blank" rel="noopener noreferrer">
-              <Button className="flex items-center gap-2">
+              <Button className="flex items-center gap-2 cursor-pointer transition-transform hover:scale-105 hover:brightness-110">
                 <Globe className="w-4 h-4" /> Website
               </Button>
             </Link>

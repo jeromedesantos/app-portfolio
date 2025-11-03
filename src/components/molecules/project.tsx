@@ -6,7 +6,7 @@ import projects from "@/data/projects.json";
 export function Project() {
   return (
     <section
-      className="min-h-screen py-30 px-5 flex flex-col gap-15 items-center"
+      className="min-h-screen py-35 px-5 flex flex-col gap-15 items-center"
       id={project.id}
     >
       <div className="flex flex-col gap-5 max-w-6xl items-center text-center">
