@@ -51,7 +51,7 @@ export function Stack() {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.5 }}
-        className="w-full max-w-6xl rounded-2xl border border-border/60 bg-background/70 p-4 sm:p-6 backdrop-blur shadow-[0_10px_30px_-10px_rgba(0,0,0,0.15)]"
+        className="w-full max-w-6xl rounded-2xl border border-border/60 bg-gradient-to-r from-background via-background/70 to-background p-4 sm:p-6 backdrop-blur shadow-[0_10px_30px_-10px_rgba(0,0,0,0.15)]"
       >
         <Tech />
       </motion.div>

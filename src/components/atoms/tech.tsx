@@ -23,7 +23,6 @@ export function Tech() {
         pauseOnHover
         scaleOnHover
         fadeOut
-        // fadeOutColor={fadeOutColor}
         ariaLabel="Technology partners"
       />
     </div>

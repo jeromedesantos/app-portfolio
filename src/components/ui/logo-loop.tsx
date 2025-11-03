@@ -439,5 +439,3 @@ export const LogoLoop = React.memo<LogoLoopProps>(
 );
 
 LogoLoop.displayName = "LogoLoop";
-
-export default LogoLoop;
