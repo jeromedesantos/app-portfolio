@@ -14,7 +14,7 @@ interface ProjectCardProps {
   websiteLink: string;
 }
 
-export function ProjectCard({
+export function Card({
   delay,
   image,
   title,

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import projects from "@/data/projects.json";
-import { ProjectCard } from "./project-card";
+import { Card } from "@/components/atoms/card";
 
 export function Projects() {
   return (
@@ -41,7 +41,7 @@ export function Projects() {
       </div>
       <div className="grid md:grid-cols-3 gap-6 max-w-6xl px-4">
         {projects.projects.map((project) => (
-          <ProjectCard key={project.id} {...project} />
+          <Card key={project.id} {...project} />
         ))}
       </div>
     </section>

@@ -1,7 +1,5 @@
-"use client";
-
 import { motion } from "framer-motion";
-import { LogoSlider } from "./slider";
+import { Stack } from "@/components/atoms/stack";
 
 export function TechStack() {
   return (
@@ -9,7 +7,6 @@ export function TechStack() {
       id={"#techstack"}
       className="relative flex flex-col items-center gap-12 py-20 px-6 overflow-hidden bg-accent"
     >
-      {/* background decorative gradient blobs */}
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute -top-16 -right-20 h-64 w-64 rounded-full bg-primary/10 blur-3xl" />
         <div className="absolute -bottom-10 -left-12 h-72 w-72 rounded-full bg-secondary/20 blur-3xl" />
@@ -44,7 +41,8 @@ export function TechStack() {
           transition={{ duration: 0.5, delay: 0.05 }}
           className="max-w-2xl text-sm sm:text-base text-muted-foreground"
         >
-          From frontend frameworks to databases, here are the technologies I rely on to build fast and reliable products.
+          From frontend frameworks to databases, here are the technologies I
+          rely on to build fast and reliable products.
         </motion.p>
       </div>
 
@@ -55,15 +53,8 @@ export function TechStack() {
         transition={{ duration: 0.5 }}
         className="w-full max-w-6xl rounded-2xl border border-border/60 bg-background/70 p-4 sm:p-6 backdrop-blur shadow-[0_10px_30px_-10px_rgba(0,0,0,0.15)]"
       >
-        <div className="flex justify-between items-center mb-4 px-2">
-          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <span className="h-2 w-2 rounded-full bg-primary/70" />
-            <span>Smooth marquee</span>
-          </div>
-          <div className="text-xs text-muted-foreground">Autoplay · Infinite · Linear</div>
-        </div>
         <section id="tech-stack" className="flex justify-center">
-          <LogoSlider />
+          <Stack />
         </section>
       </motion.div>
     </section>
