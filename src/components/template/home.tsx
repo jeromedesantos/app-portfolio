@@ -4,7 +4,7 @@ import { Footer } from "@/components/molecules/footer";
 import { Hero } from "@/components/molecules/hero";
 import { Menu } from "@/components/molecules/menu";
 import { Navbar } from "@/components/molecules/navbar";
-import { TechStack } from "@/components/molecules/techstack";
+import { Stack } from "@/components/molecules/stack";
 import { useState } from "react";
 import { Project } from "@/components/molecules/project";
 
@@ -18,7 +18,7 @@ export function Home() {
       <Navbar isActive={isActive} toggleMenu={toggleMenu} />
       <Menu isActive={isActive} />
       <Hero />
-      <TechStack />
+      <Stack />
       <Project />
       <Footer />
     </div>

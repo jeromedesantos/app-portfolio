@@ -20,8 +20,8 @@ export const metadata: Metadata = {
     "Tingkatkan efisiensi bisnismu dengan automasi stok, notifikasi, dan laporan real-time — langsung dari Telegram.",
   icons: {
     icon: [
-      { media: "(prefers-color-scheme: light)", url: "/icon-light.png" },
-      { media: "(prefers-color-scheme: dark)", url: "/icon-dark.png" },
+      { media: "(prefers-color-scheme: light)", url: "/icons/icon-light.png" },
+      { media: "(prefers-color-scheme: dark)", url: "/icons/icon-dark.png" },
     ],
   },
 };

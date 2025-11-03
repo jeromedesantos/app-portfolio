@@ -1,21 +1,16 @@
 [
   {
     "id": 1,
-    "name": "Home",
-    "path": "#home"
+    "name": "Stacks",
+    "path": "#stacks"
   },
   {
     "id": 2,
-    "name": "Tech Stack",
-    "path": "#techstack"
+    "name": "Experiences",
+    "path": "#experiences"
   },
   {
     "id": 3,
-    "name": "Experience",
-    "path": "#experience"
-  },
-  {
-    "id": 4,
     "name": "Projects",
     "path": "#projects"
   }

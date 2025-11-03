@@ -2,46 +2,46 @@
   {
     "id": 1,
     "delay": 0,
-    "image": "/project-placeholders/project1.jpg",
+    "image": "/projects/app-circle.png",
     "title": "Circle App",
-    "description": "A web application built with Next.js and Tailwind CSS, featuring a responsive design and dynamic content loading.",
-    "githubLink": "https://github.com/yourusername/project-alpha",
-    "websiteLink": "https://project-alpha.vercel.app"
+    "description": "A social media application built with Next.js and Tailwind CSS, designed for creating and sharing content within a vibrant community.",
+    "githubLink": "https://github.com/jeromedesantos12/app-circle",
+    "websiteLink": "#"
   },
   {
     "id": 2,
     "delay": 0.1,
-    "image": "/project-placeholders/project2.jpg",
+    "image": "/projects/app-store.png",
     "title": "My Store",
-    "description": "A mobile-first e-commerce platform developed using React Native, integrated with a custom backend API.",
-    "githubLink": "https://github.com/yourusername/project-beta",
-    "websiteLink": "https://project-beta.netlify.app"
+    "description": "An e-commerce platform featuring a mobile-first design and integrated with WhatsApp bot automation for seamless customer communication.",
+    "githubLink": "https://github.com/jeromedesantos12/app-store",
+    "websiteLink": "#"
   },
   {
     "id": 3,
     "delay": 0.2,
-    "image": "/project-placeholders/project3.jpg",
+    "image": "/projects/app-instacard.png",
     "title": "Instacard",
-    "description": "A data visualization tool created with D3.js, showcasing interactive charts and real-time data updates.",
-    "githubLink": "https://github.com/yourusername/project-gamma",
-    "websiteLink": "https://project-gamma.vercel.app"
+    "description": "A digital business card and link-in-bio application, similar to Linktree, for consolidating your online presence.",
+    "githubLink": "https://github.com/jeromedesantos12/app-instacard",
+    "websiteLink": "#"
   },
   {
     "id": 4,
     "delay": 0.2,
-    "image": "/project-placeholders/project3.jpg",
+    "image": "/projects/app-todo.png",
     "title": "Todo",
-    "description": "A data visualization tool created with D3.js, showcasing interactive charts and real-time data updates.",
-    "githubLink": "https://github.com/yourusername/project-gamma",
-    "websiteLink": "https://project-gamma.vercel.app"
+    "description": "A Trello-like project management tool to organize tasks, track progress, and collaborate with teams in a visual workflow.",
+    "githubLink": "https://github.com/jeromedesantos12/app-todo",
+    "websiteLink": "https://dumb-todo.netlify.app"
   },
   {
     "id": 5,
     "delay": 0.2,
-    "image": "/project-placeholders/project3.jpg",
+    "image": "/projects/app-ngorderin.png",
     "title": "Ngorderin bot",
-    "description": "A data visualization tool created with D3.js, showcasing interactive charts and real-time data updates.",
-    "githubLink": "https://github.com/yourusername/project-gamma",
-    "websiteLink": "https://project-gamma.vercel.app"
+    "description": "A WhatsApp bot application designed to provide real-time stock notifications and automate inventory management.",
+    "githubLink": "https://github.com/jeromedesantos12/app-ngorderin",
+    "websiteLink": "https://dumb-ngorderin.netlify.app"
   }
 ]

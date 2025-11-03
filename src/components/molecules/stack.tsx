@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import { Stack } from "@/components/atoms/stack";
-import techstack from "@/data/techstack.json";
+import { Tech } from "@/components/atoms/tech";
+import stack from "@/data/stack.json";
 
-export function TechStack() {
+export function Stack() {
   return (
     <section
-      id={techstack.id}
+      id={stack.id}
       className="relative flex flex-col min-h-2/3 justify-center items-center gap-12 py-20 px-6 overflow-hidden bg-accent scroll-mt-40"
     >
       <div className="pointer-events-none absolute inset-0 -z-10">
@@ -22,7 +22,7 @@ export function TechStack() {
           className="inline-flex items-center gap-2 rounded-full border border-border/60 bg-background/70 px-4 py-1 text-xs font-medium uppercase tracking-wider text-muted-foreground shadow-sm backdrop-blur"
         >
           <span className="h-2 w-2 rounded-full bg-primary/80 animate-pulse" />
-          {techstack.tag}
+          {stack.id}
         </motion.span>
 
         <motion.h1
@@ -32,7 +32,7 @@ export function TechStack() {
           transition={{ duration: 0.5 }}
           className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight tracking-tight"
         >
-          {techstack.title}
+          {stack.title}
         </motion.h1>
 
         <motion.p
@@ -42,7 +42,7 @@ export function TechStack() {
           transition={{ duration: 0.5, delay: 0.05 }}
           className="max-w-2xl text-sm sm:text-base text-muted-foreground"
         >
-          {techstack.description}
+          {stack.description}
         </motion.p>
       </div>
 
@@ -53,9 +53,7 @@ export function TechStack() {
         transition={{ duration: 0.5 }}
         className="w-full max-w-6xl rounded-2xl border border-border/60 bg-background/70 p-4 sm:p-6 backdrop-blur shadow-[0_10px_30px_-10px_rgba(0,0,0,0.15)]"
       >
-        <section id="tech-stack" className="flex justify-center">
-          <Stack />
-        </section>
+        <Tech />
       </motion.div>
     </section>
   );
