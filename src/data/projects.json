@@ -1,7 +1,6 @@
 [
   {
     "id": 1,
-    "delay": 0,
     "image": "/projects/app-circle.png",
     "title": "Circle App",
     "description": "A social media application built with Next.js and Tailwind CSS, designed for creating and sharing content within a vibrant community.",
@@ -10,7 +9,6 @@
   },
   {
     "id": 2,
-    "delay": 0.1,
     "image": "/projects/app-store.png",
     "title": "My Store",
     "description": "An e-commerce platform featuring a mobile-first design and integrated with WhatsApp bot automation for seamless customer communication.",
@@ -19,7 +17,6 @@
   },
   {
     "id": 3,
-    "delay": 0.2,
     "image": "/projects/app-instacard.png",
     "title": "Instacard",
     "description": "A digital business card and link-in-bio application, similar to Linktree, for consolidating your online presence.",
@@ -28,7 +25,6 @@
   },
   {
     "id": 4,
-    "delay": 0.2,
     "image": "/projects/app-todo.png",
     "title": "Todo",
     "description": "A Trello-like project management tool to organize tasks, track progress, and collaborate with teams in a visual workflow.",
@@ -37,7 +33,6 @@
   },
   {
     "id": 5,
-    "delay": 0.2,
     "image": "/projects/app-ngorderin.png",
     "title": "Ngorderin bot",
     "description": "A WhatsApp bot application designed to provide real-time stock notifications and automate inventory management.",

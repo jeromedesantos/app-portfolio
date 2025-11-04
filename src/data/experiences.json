@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "job": "Computer Teacher",
+    "company": "Tarsisius Vireta",
+    "date": "2024",
+    "logo": "/experiences/vireta.jpg",
+    "description": "Responsible for designing, delivering, and assessing an engaging K-6 Digital Literacy and ICT curriculum, focusing on foundational software skills, visual coding (e.g., Scratch), and promoting safe Digital Citizenship while maintaining an effective computer lab environment."
+  },
+  {
+    "id": 2,
+    "job": "Internship",
+    "company": "PT Inovasi Solusi Internasional",
+    "date": "2022",
+    "logo": "/experiences/isi.jpg",
+    "description": "Creating a full-stack web project by implementing the MERN system: MongoDB for the database, Express for the backend API, React.js for the frontend display, all of which run within the Node.js application."
+  },
+  {
+    "id": 3,
+    "job": "Internship",
+    "company": "PT Global Media Inti Semesta",
+    "date": "2016",
+    "logo": "/experiences/gmis.jpg",
+    "description": "Performing internet network installation to customers both installation outside and inside the building. Perform computer repairs by reinstalling and also cleaning the virus. Work with 10 people in a team."
+  }
+]

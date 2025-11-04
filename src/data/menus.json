@@ -6,12 +6,12 @@
   },
   {
     "id": 2,
-    "name": "Experiences",
-    "path": "#experiences"
+    "name": "Projects",
+    "path": "#projects"
   },
   {
     "id": 3,
-    "name": "Projects",
-    "path": "#projects"
+    "name": "Experiences",
+    "path": "#experiences"
   }
 ]

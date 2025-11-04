@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 
 interface ProjectCardProps {
   id: number;
-  delay: number;
   image: string;
   title: string;
   description: string;
@@ -15,7 +14,7 @@ interface ProjectCardProps {
 }
 
 export function Card({
-  delay,
+  id,
   image,
   title,
   description,
@@ -26,7 +25,7 @@ export function Card({
     <motion.div
       initial={{ opacity: 0, translateY: "100%" }}
       whileInView={{ opacity: 1, translateY: 0 }}
-      transition={{ duration: 0.5, delay: delay }}
+      transition={{ duration: 0.5, delay: id * 0.2 }}
       viewport={{ once: true, amount: 0.4 }}
       className="bg-card rounded-lg shadow-lg overflow-hidden flex flex-col"
     >

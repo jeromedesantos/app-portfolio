@@ -7,6 +7,7 @@ import { Navbar } from "@/components/molecules/navbar";
 import { Stack } from "@/components/molecules/stack";
 import { useState } from "react";
 import { Project } from "@/components/molecules/project";
+import Experience from "@/components/molecules/experience";
 
 export function Home() {
   const [isActive, setIsActive] = useState(false);
@@ -20,6 +21,7 @@ export function Home() {
       <Hero />
       <Stack />
       <Project />
+      <Experience />
       <Footer />
     </div>
   );

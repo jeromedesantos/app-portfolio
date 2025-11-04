@@ -33,7 +33,7 @@ export function Hero() {
           className="relative w-full md:w-[400px] h-64 sm:h-80 md:h-96"
         >
           <Image
-            src={`/${hero.image}`}
+            src={hero.image}
             alt="Profile preview"
             fill
             className="object-cover object-top rounded-2xl shadow-lg"
