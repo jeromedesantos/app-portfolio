@@ -79,7 +79,7 @@ export function Hero() {
           >
             <Link href={app.contact} target="_blank">
               <Button className="cursor-pointer flex gap-2 items-center justify-center px-6 py-3 shadow-md transform hover:-translate-y-1 transition-transform p-4">
-                <p>Contact Us</p>
+                <p>Contact Me</p>
                 <ArrowRight className="w-5 h-5" />
               </Button>
             </Link>

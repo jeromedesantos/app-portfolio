@@ -22,16 +22,6 @@ export function Navbar({ isActive, toggleMenu }: NavbarProps) {
     setMounted(true);
   }, []);
 
-  const handleHashClick = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
-    if (path.startsWith('#')) {
-      e.preventDefault();
-      const element = document.querySelector(path);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  };
-
   if (!mounted) return null;
   return (
     <header className="fixed top-0 w-full bg-background flex justify-center z-30">
@@ -39,7 +29,6 @@ export function Navbar({ isActive, toggleMenu }: NavbarProps) {
         <Link
           href={app.path}
           className="font-bold flex gap-2 items-center justify-center"
-          onClick={(e) => e.stopPropagation()}
         >
           <Code className="duration-300" />
           <p className="font-mono duration-300">{app.title}</p>
@@ -65,13 +54,10 @@ export function Navbar({ isActive, toggleMenu }: NavbarProps) {
         <ul className="md:flex gap-5 text-sm hidden">
           {menus.map((menu) => (
             <Link
-              href={menu.path}
+              href={`${menu.path}`}
               key={menu.id}
               className="cursor-pointer border-b-3 border-transparent hover:border-primary px-5 duration-300"
-              onClick={(e) => {
-                e.stopPropagation();
-                handleHashClick(e, menu.path);
-              }}
+              onClick={(e) => e.stopPropagation()}
             >
               {menu.name}
             </Link>
@@ -86,10 +72,7 @@ export function Navbar({ isActive, toggleMenu }: NavbarProps) {
             {currentTheme === "dark" ? <Sun /> : <Moon />}
           </Button>
           <Link href={app.contact} target="_blank">
-            <Button
-              className="cursor-pointer hover:scale-105 transition-transform flex gap-2 items-center justify-center"
-              onClick={(e) => e.stopPropagation()}
-            >
+            <Button className="cursor-pointer hover:scale-105 transition-transform flex gap-2 items-center justify-center">
               <p>Contact Me</p>
               <ChevronRight />
             </Button>
