@@ -11,6 +11,18 @@ interface MenuProps {
 }
 
 export function Menu({ isActive, toggleMenu }: MenuProps) {
+  const handleHashClick = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
+    if (path.startsWith('#')) {
+      e.preventDefault();
+      e.stopPropagation();
+      toggleMenu();
+      const element = document.querySelector(path);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <header
       className={cn(
@@ -23,14 +35,21 @@ export function Menu({ isActive, toggleMenu }: MenuProps) {
           <Link
             href={menu.path}
             key={menu.id}
-            onClick={toggleMenu}
+            onClick={(e) => handleHashClick(e, menu.path)}
             className="cursor-pointer hover:bg-accent duration-300 py-2"
           >
             {menu.name}
           </Link>
         ))}
       </ul>
-      <Link href={app.contact} target="_blank" onClick={toggleMenu}>
+      <Link
+        href={app.contact}
+        target="_blank"
+        onClick={(e) => {
+          e.stopPropagation();
+          toggleMenu();
+        }}
+      >
         <Button className="cursor-pointer hover:scale-105 transition-transform flex gap-2 items-center justify-center">
           <p>Contact Me</p>
           <ChevronRight />
