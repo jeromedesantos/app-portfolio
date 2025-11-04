@@ -17,7 +17,7 @@ export function Home() {
   return (
     <div onClick={handleDiv}>
       <Navbar isActive={isActive} toggleMenu={toggleMenu} />
-      <Menu isActive={isActive} />
+      <Menu isActive={isActive} toggleMenu={handleDiv} />
       <Hero />
       <Stack />
       <Project />

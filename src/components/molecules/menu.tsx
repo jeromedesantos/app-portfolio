@@ -7,9 +7,10 @@ import Link from "next/link";
 
 interface MenuProps {
   isActive: boolean;
+  toggleMenu: () => void;
 }
 
-export function Menu({ isActive }: MenuProps) {
+export function Menu({ isActive, toggleMenu }: MenuProps) {
   return (
     <header
       className={cn(
@@ -22,13 +23,14 @@ export function Menu({ isActive }: MenuProps) {
           <Link
             href={menu.path}
             key={menu.id}
+            onClick={toggleMenu}
             className="cursor-pointer hover:bg-accent duration-300 py-2"
           >
             {menu.name}
           </Link>
         ))}
       </ul>
-      <Link href={app.contact} target="_blank">
+      <Link href={app.contact} target="_blank" onClick={toggleMenu}>
         <Button className="cursor-pointer hover:scale-105 transition-transform flex gap-2 items-center justify-center">
           <p>Contact Me</p>
           <ChevronRight />
