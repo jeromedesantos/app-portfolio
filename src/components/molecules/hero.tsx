@@ -13,7 +13,7 @@ export function Hero() {
       id={hero.id}
       className="relative w-full min-h-screen overflow-hidden flex items-center justify-center"
     >
-      {/* <Particles
+      <Particles
         className="absolute inset-0 z-0"
         particleColors={["#ffffff", "#ffffff"]}
         particleCount={200}
@@ -23,7 +23,7 @@ export function Hero() {
         moveParticlesOnHover={true}
         alphaParticles={false}
         disableRotation={false}
-      /> */}
+      />
       <div className="absolute inset-0 flex flex-col md:flex-row gap-8 flex-wrap justify-center items-center px-5 z-10">
         <motion.div
           initial={{ opacity: 0, translateX: "-100%" }}
