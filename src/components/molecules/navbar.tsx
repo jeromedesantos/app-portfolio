@@ -22,10 +22,7 @@ export function Navbar({ isActive, toggleMenu }: NavbarProps) {
     setMounted(true);
   }, []);
 
-  function handleHashClick(
-    e: React.MouseEvent<HTMLAnchorElement>,
-    path: string
-  ) {
+  const handleHashClick = (e: React.MouseEvent<HTMLElement>, path: string) => {
     if (path.startsWith("#")) {
       e.preventDefault();
       const element = document.querySelector(path);
@@ -33,7 +30,7 @@ export function Navbar({ isActive, toggleMenu }: NavbarProps) {
         element.scrollIntoView({ behavior: "smooth" });
       }
     }
-  }
+  };
 
   if (!mounted) return null;
   return (
