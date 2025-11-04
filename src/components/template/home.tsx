@@ -17,7 +17,7 @@ export function Home() {
   return (
     <>
       <Navbar isActive={isActive} toggleMenu={toggleMenu} />
-      <div onClick={handleDiv}>
+      <div onClick={handleDiv} style={{ border: '2px solid red' }}>
         <Menu isActive={isActive} />
         <Hero />
         <Stack />
