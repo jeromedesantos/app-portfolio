@@ -12,10 +12,10 @@ import Experience from "@/components/molecules/experience";
 export function Home() {
   const [isActive, setIsActive] = useState(false);
   const toggleMenu = () => setIsActive(!isActive);
-  // const handleDiv = () => setIsActive(false);
+  const handleDiv = () => setIsActive(false);
 
   return (
-    <div>
+    <div onClick={handleDiv}>
       <Navbar isActive={isActive} toggleMenu={toggleMenu} />
       <Menu isActive={isActive} />
       <Hero />
