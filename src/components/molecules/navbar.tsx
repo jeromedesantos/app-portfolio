@@ -37,7 +37,7 @@ export function Navbar({ isActive, toggleMenu }: NavbarProps) {
     <header className="fixed top-0 w-full bg-background flex justify-center z-30">
       <div className="w-full max-w-7xl flex justify-between items-center p-4">
         <div
-          className="font-bold flex gap-2 items-center justify-center"
+          className="font-bold flex gap-2 items-center justify-center cursor-pointer"
           onClick={(e) => {
             e.stopPropagation();
             handleHashClick(e, app.path);
