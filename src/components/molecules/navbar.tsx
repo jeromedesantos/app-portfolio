@@ -57,7 +57,6 @@ export function Navbar({ isActive, toggleMenu }: NavbarProps) {
               href={`${menu.path}`}
               key={menu.id}
               className="cursor-pointer border-b-3 border-transparent hover:border-primary px-5 duration-300"
-              onClick={(e) => e.stopPropagation()}
             >
               {menu.name}
             </Link>
