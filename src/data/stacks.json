@@ -30,46 +30,69 @@
     "href": "https://getbootstrap.com"
   },
   {
-    "id": 5,
+    "id": 6,
     "name": "SiTailwindcss",
     "title": "Tailwind CSS",
     "href": "https://tailwindcss.com"
   },
-  { "id": 3, "name": "SiReact", "title": "React", "href": "https://react.dev" },
-  {
-    "id": 4,
-    "name": "SiMysql",
-    "title": "MySQL",
-    "href": "https://www.mysql.com"
-  },
-  {
-    "id": 5,
-    "name": "SiPostgresql",
-    "title": "PostgreSQL",
-    "href": "https://www.postgresql.org"
-  },
-  {
-    "id": 6,
-    "name": "SiMongodb",
-    "title": "MongoDB",
-    "href": "https://www.mongodb.com"
-  },
   {
     "id": 7,
+    "name": "SiReact",
+    "title": "React",
+    "href": "https://react.dev"
+  },
+  {
+    "id": 8,
+    "name": "SiShadcnui",
+    "title": "Shadcn UI",
+    "href": "https://ui.shadcn.com"
+  },
+  {
+    "id": 9,
     "name": "SiExpress",
     "title": "Express",
     "href": "https://expressjs.com"
   },
   {
-    "id": 8,
+    "id": 10,
     "name": "SiNodedotjs",
     "title": "Node.js",
     "href": "https://nodejs.org"
   },
   {
-    "id": 9,
+    "id": 11,
     "name": "SiDotnet",
     "title": ".NET",
     "href": "https://dotnet.microsoft.com"
+  },
+  {
+    "id": 12,
+    "name": "SiSupabase",
+    "title": "Supabase",
+    "href": "https://supabase.io"
+  },
+  {
+    "id": 13,
+    "name": "SiMysql",
+    "title": "MySQL",
+    "href": "https://www.mysql.com"
+  },
+  {
+    "id": 14,
+    "name": "SiPostgresql",
+    "title": "PostgreSQL",
+    "href": "https://www.postgresql.org"
+  },
+  {
+    "id": 15,
+    "name": "SiMongodb",
+    "title": "MongoDB",
+    "href": "https://www.mongodb.com"
+  },
+  {
+    "id": 16,
+    "name": "SiRedis",
+    "title": "Redis",
+    "href": "https://redis.io"
   }
 ]
