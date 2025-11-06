@@ -21,7 +21,7 @@ export function Socials({ id, name, href }: SocialsProps) {
     >
       <Link href={href} target="_blank">
         <Button
-          variant="outline"
+          variant="secondary"
           className="rounded-full cursor-pointer p-5 transition-transform hover:scale-115"
         >
           <Suspense>
