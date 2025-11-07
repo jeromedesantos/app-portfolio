@@ -35,7 +35,7 @@ export function Navbar({ isActive, toggleMenu }: NavbarProps) {
   if (!mounted) return null;
   return (
     <header className="fixed top-0 w-full bg-background flex justify-center z-30">
-      <div className="w-full max-w-7xl flex justify-between items-center p-4">
+      <div className="w-full flex justify-between items-center py-4 px-20">
         <div
           className="font-bold flex gap-2 items-center justify-center cursor-pointer"
           onClick={(e) => {
