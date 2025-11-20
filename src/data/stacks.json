@@ -21,7 +21,7 @@
     "id": 4,
     "name": "SiTypescript",
     "title": "TypeScript",
-    "href": "https://www.typescriptlang.org"
+    "href": "https://typescriptlang.org"
   },
   {
     "id": 5,
@@ -75,24 +75,36 @@
     "id": 13,
     "name": "SiMysql",
     "title": "MySQL",
-    "href": "https://www.mysql.com"
+    "href": "https://mysql.com"
   },
   {
     "id": 14,
     "name": "SiPostgresql",
     "title": "PostgreSQL",
-    "href": "https://www.postgresql.org"
+    "href": "https://postgresql.org"
   },
   {
     "id": 15,
     "name": "SiMongodb",
     "title": "MongoDB",
-    "href": "https://www.mongodb.com"
+    "href": "https://mongodb.com"
   },
   {
     "id": 16,
     "name": "SiRedis",
     "title": "Redis",
     "href": "https://redis.io"
+  },
+  {
+    "id": 17,
+    "name": "SiSocketdotio",
+    "title": "Socket.io",
+    "href": "https://socket.io"
+  },
+  {
+    "id": 18,
+    "name": "SiDocker",
+    "title": "Docker",
+    "href": "https://docker.com"
   }
 ]
