@@ -106,5 +106,11 @@
     "name": "SiDocker",
     "title": "Docker",
     "href": "https://docker.com"
+  },
+  {
+    "id": 19,
+    "name": "SiGit",
+    "title": "Git",
+    "href": "https://git-scm.com"
   }
 ]
