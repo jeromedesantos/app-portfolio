@@ -21,7 +21,7 @@
     "title": "Instacard",
     "description": "A digital business card and link-in-bio application, similar to Linktree, for consolidating your online presence.",
     "githubLink": "https://github.com/jeromedesantos12/app-instacard",
-    "websiteLink": "https://dumbinstacard.vercel.app"
+    "websiteLink": "https://try-instacard.vercel.app"
   },
   {
     "id": 4,
@@ -30,13 +30,5 @@
     "description": "A Trello-like project management tool to organize tasks, track progress, and collaborate with teams in a visual workflow.",
     "githubLink": "https://github.com/jeromedesantos12/app-todo",
     "websiteLink": "https://dumbtodo.vercel.app"
-  },
-  {
-    "id": 5,
-    "image": "/projects/app-ngorderin.png",
-    "title": "Ngorderin bot",
-    "description": "A WhatsApp bot application designed to provide real-time stock notifications and automate inventory management.",
-    "githubLink": "https://github.com/jeromedesantos12/app-ngorderin",
-    "websiteLink": "#"
   }
 ]
