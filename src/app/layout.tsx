@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { Inter, Roboto_Mono } from "next/font/google";
+// import { Inter, Roboto_Mono } from "next/font/google"; // Temporarily disabled to fix Vercel build
 import { ThemeProvider } from "next-themes";
 import app from "@/data/app.json";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// const inter = Inter({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
 
-const robotoMono = Roboto_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// const robotoMono = Roboto_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
 
 export const metadata: Metadata = {
   title: app.title,
@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`font-sans ${inter.variable} ${robotoMono.variable} antialiased`}
+        className={`font-sans antialiased`} // Font variables temporarily removed
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
