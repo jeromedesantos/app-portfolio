@@ -1,6 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  experimental: {
+    // Disable Lightning CSS optimization to avoid missing native binary on Vercel
+    optimizeCss: false,
+  },
   images: {
     remotePatterns: [
       {
