@@ -243,6 +243,7 @@ export const Particles: FC<ParticlesProps> = ({
     sizeRandomness,
     cameraDistance,
     disableRotation,
+    particleColors,
   ]);
 
   return (

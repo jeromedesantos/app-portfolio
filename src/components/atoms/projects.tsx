@@ -10,7 +10,7 @@ interface ProjectsProps {
   title: string;
   description: string;
   githubLink: string;
-  websiteLink: string;
+  websiteLink?: string;
 }
 
 export function Projects({
