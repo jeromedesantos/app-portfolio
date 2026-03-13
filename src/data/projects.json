@@ -30,5 +30,12 @@
     "description": "A Trello-like project management tool to organize tasks, track progress, and collaborate with teams in a visual workflow.",
     "githubLink": "https://github.com/jeromedesantos/app-todo",
     "websiteLink": "https://dumbtodo.vercel.app"
+  },
+  {
+    "id": 5,
+    "image": "/projects/app-chat.png",
+    "title": "Todo",
+    "description": "A chat application for mobile similar to WhatsApp build with React Native using Socket.io and Expo.",
+    "githubLink": "https://github.com/jeromedesantos/app-todo"
   }
 ]
